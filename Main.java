@@ -19,7 +19,7 @@ class Main {
   ArrayList<Inventory> arrayList = new ArrayList<>();
   Scanner scanner = new Scanner(System.in);
   while (true){
-    System.out.println("Press 1 to add an item");
+    System.out.println("Press 1 to add an item.");
     System.out.println("Press 2 to delete an item.");
     System.out.println("Press 3 to update an item.");
     System.out.println("Press 4 to show all the items.");
@@ -55,7 +55,7 @@ class Main {
             System.out.println("Enter the new name:");
             String newn = scanner.nextLine();
             System.out.println("Enter the new value in dollars (whole number)");
-            
+            //String nv = scan.next();
             String newv = scanner.nextLine();
             arrayList.get(i).name = newn;
             arrayList.get(i).value = newv;
