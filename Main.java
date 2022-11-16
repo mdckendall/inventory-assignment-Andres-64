@@ -19,12 +19,13 @@ class Main {
   ArrayList<Inventory> arrayList = new ArrayList<>();
   Scanner scanner = new Scanner(System.in);
   while (true){
-    System.out.println("Press 1 to add an item.");
+    System.out.println("Press 1 to add an item");
     System.out.println("Press 2 to delete an item.");
     System.out.println("Press 3 to update an item.");
     System.out.println("Press 4 to show all the items.");
     System.out.println("Press 5 to quit the program.");
     int input = scanner.nextInt();
+    scanner.nextLine();
     switch (input){
       case 1:
         System.out.println("Enter the name:");
@@ -55,7 +56,6 @@ class Main {
             System.out.println("Enter the new name:");
             String newn = scanner.nextLine();
             System.out.println("Enter the new value in dollars (whole number)");
-            //String nv = scan.next();
             String newv = scanner.next();
             arrayList.get(i).name = newn;
             arrayList.get(i).value = newv;
