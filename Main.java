@@ -31,10 +31,10 @@ class Main {
         String n = scanner.nextLine();
         System.out.println("Enter the serial number:");
        
-        String s = scanner.nextLine();
+        String s = scanner.next();
         System.out.println("Enter the value in dollars (whole number):");
        
-        String p = scanner.nextLine();
+        String p = scanner.next();
         arrayList.add(new Inventory(n, s ,p));
         break;
       case 2:
@@ -56,7 +56,7 @@ class Main {
             String newn = scanner.nextLine();
             System.out.println("Enter the new value in dollars (whole number)");
             //String nv = scan.next();
-            String newv = scanner.nextLine();
+            String newv = scanner.next();
             arrayList.get(i).name = newn;
             arrayList.get(i).value = newv;
           }
