@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 import java.util.Scanner;
-
 class Inventory {
   public String name, serialNum;
   String value;      
@@ -13,13 +12,12 @@ class Inventory {
     return name + "," + serialNum + "," + value;
   }
 }
-
 class Main {
 	public static void main(String[] args) {
   ArrayList<Inventory> arrayList = new ArrayList<>();
   Scanner scanner = new Scanner(System.in);
   while (true){
-    System.out.println("Press 1 to add an item");
+    System.out.println("Press 1 to add an item.");
     System.out.println("Press 2 to delete an item.");
     System.out.println("Press 3 to update an item.");
     System.out.println("Press 4 to show all the items.");
@@ -67,8 +65,8 @@ class Main {
             System.out.println(i);
           }
           break;
-      case 5:
-        System.exit(0);
+        case 5:
+          System.exit(0);
     }
   }
 	}
