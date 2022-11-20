@@ -29,14 +29,14 @@ class Main {
         System.out.println("Enter the name:");
         String n = scanner.nextLine();
         System.out.println("Enter the serial number:");
-        String s = scanner.nextLine();
+        String s = scanner.next();
         System.out.println("Enter the value in dollars (whole number):");
-        String p = scanner.nextLine();
+        String p = scanner.next();
         arrayList.add(new Inventory(n, s ,p));
         break;
       case 2:
         System.out.println("Enter the serial number of the item to delete:");
-        String its = scanner.nextLine();
+        String its = scanner.next();
         for (int i = 0; i < arrayList.size(); i++){
           if (arrayList.get(i).serialNum.equals(its)){
             arrayList.remove(i);
@@ -45,14 +45,14 @@ class Main {
         break;
       case 3:
         System.out.println("Enter the serial number of the item to change:");
-        String st = scanner.nextLine();
+        String st = scanner.next();
         scanner.nextLine();
         for (int i = 0; i < arrayList.size(); i++){
           if (arrayList.get(i).serialNum.equals(st)){
             System.out.println("Enter the new name:");
             String newn = scanner.nextLine();
             System.out.println("Enter the new value in dollars (whole number)");
-            String newv = scanner.nextLine();
+            String newv = scanner.next();
             arrayList.get(i).name = newn;
             arrayList.get(i).value = newv;
           }
